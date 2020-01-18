@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>只出现一次的数字</title>
+      <link href="/2020/01/18/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/"/>
+      <url>/2020/01/18/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/</url>
+      
+        <content type="html"><![CDATA[<html><head><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script></head><body><p>给定一个<strong>非空</strong>整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。</p><h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a><strong>说明：</strong></h2><p>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？</p><h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1:"></a><strong>示例 1:</strong></h4><p><code>输入: [2,2,1]</code> </p><p><code>输出: 1</code></p><h4 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2:"></a><strong>示例 2:</strong></h4><p><code>输入: [4,1,2,1,2]</code> </p><p><code>输出: 4</code></p><h2 id="解题："><a href="#解题：" class="headerlink" title="解题："></a>解题：</h2><p>这道题真的妙，我越发觉得自己不适合算法什么的了😑</p><p>最精彩的解法是用异或运算</p><p>先设一个变量、初始值为0，将其与数组中的每个数异或，每次赋值为得到的新值。由于第一个数与0异或，还是其自己，在与后面的异或相同则是0，不同则还是自己，所以最后得到的数只有出现过一次的数。</p><p><code>class Solution {</code></p><p>​    <code>public int singleNumber(int[] nums) {</code></p><p>​        <code>int once = 0;</code></p><p>​        <code>for(int i = 0; i < nums.length; i++){</code></p><p>​            <code>once = once ^ nums[i];</code></p><p>​        <code>}</code></p><p>​        <code>return once ;</code></p><p>​        <code>}</code></p><p>​    <code>}</code></p></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 巧妙的算法 </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++ vector容器</title>
+      <link href="/2020/01/17/C++%20vector%20%E5%AE%B9%E5%99%A8/"/>
+      <url>/2020/01/17/C++%20vector%20%E5%AE%B9%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<html><head><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script></head><body><h1 id="C-vector-容器"><a href="#C-vector-容器" class="headerlink" title="C++ vector 容器"></a><strong>C++ vector 容器</strong></h1><p>向量（Vector）是一个封装了动态大小数组的顺序容器（Sequence Container）。跟任意其它类型容器一样，它能够存放各种类型的对象。可以简单的认为，向量是一个能够存放任意类型的动态数组。</p><h3 id="特性："><a href="#特性：" class="headerlink" title="特性："></a><strong>特性：</strong></h3><p><strong>1.顺序序列</strong></p><p>顺序容器中的元素按照严格的线性顺序排序。可以通过元素在序列中的位置访问对应的元素。</p><p><strong>2.动态数组</strong></p><p>支持对序列中的任意元素进行快速直接访问，甚至可以通过指针算述进行该操作。操供了在序列末尾相对快速地添加/删除元素的操作。</p><p><strong>3.能够感知内存分配器的（Allocator-aware）</strong></p><p>容器使用一个内存分配器对象来动态地处理它的存储需求。</p><h3 id="基本函数实现："><a href="#基本函数实现：" class="headerlink" title="基本函数实现："></a><strong>基本函数实现：</strong></h3><p><code>1.push_back 在数组的最后添加一个数据</code></p><p><code>2.pop_back 去掉数组的最后一个数据</code></p><p><code>3.at 得到编号位置的数据</code></p><p><code>4.begin 得到数组头的指针</code></p><p><code>5.end 得到数组的最后一个单元+1的指针</code></p><p><code>6．front 得到数组头的引用</code></p><p><code>7.back 得到数组的最后一个单元的引用</code></p><p><code>8.max_size 得到vector最大可以是多大</code></p><p><code>9.capacity 当前vector分配的大小</code></p><p><code>10.size 当前使用数据的大小</code></p><p><code>11.resize 改变当前使用数据的大小，如果它比当前使用的大，者填充默认值</code></p><p><code>12.reserve 改变当前vecotr所分配空间的大小</code></p><p><code>13.erase 删除指针指向的数据项</code></p><p><code>14.clear 清空当前的vector</code></p><p><code>15.rbegin 将vector反转后的开始指针返回(其实就是原来的end-1)</code></p><p><code>16.rend 将vector反转构的结束指针返回(其实就是原来的begin-1)</code></p><p><code>17.empty 判断vector是否为空</code></p><p><code>18.swap 与另一个vector交换数据</code></p><h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a><strong>总结：</strong></h3><p>vector容器是一个模板类，可以存放任何类型的对象（但必须是同一类对象）。vector对象可以在运行时高效地添加元素，并且vector中元素是连续存储的。#include <vector>头文件。</vector></p><h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a><strong>注意：</strong></h3><p>Ø vector和string一样，长度、下标等类型是size_type，但是vector获取size_type时，需要指定类型，如vector<int>::size_type这样的方式</int></p><p>Ø vector的下标操作，例如v[i]，只能用于操作已经存在的元素，可以进行覆盖、获取等，但是不能通过v[i++]这种方式来给一个vector容器添加元素，该功能需要用push_back操作完成，下标不具备该功能</p><p>Ø C++程序员习惯优先使用！=而不是<来编写循环判断条件</p></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> vecot&lt;&gt; </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test</title>
+      <link href="/2020/01/16/test/"/>
+      <url>/2020/01/16/test/</url>
+      
+        <content type="html"><![CDATA[<html><head><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script></head><body><p>这是一个测试文章</p><p>test</p>        <div id="aplayer-ZIXwSLjV" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-ZIXwSLjV"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "rainbow",              author: "GFRIEND",              url: "http://lc-UQ294L34.cn-n1.lcfile.com/308b986e7a1533e7329a/rainbow.mp3",              pic: "http://lc-UQ294L34.cn-n1.lcfile.com/c864c24ec3570caff28f/GFRIEND.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/01/15/hello-world/"/>
+      <url>/2020/01/15/hello-world/</url>
+      
+        <content type="html"><![CDATA[<html><head><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script></head><body><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new "My New Post"</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p></body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
