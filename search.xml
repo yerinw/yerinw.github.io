@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>加密测试</title>
+      <link href="/2020/01/19/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/"/>
+      <url>/2020/01/19/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">Hey, password is required here.</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="8e39b8c0dfc9fed1a8da06f24d078008a048c9987631cf08c5a5640c4c628171">1361495f87fcfdf0bb0aaa8d1c0d999a36e2ab59107d2c8a76548b8a3f8c177c18d64acc9a2122adfc6b367ce65581587755d52f2749cadf3a8388e2b8a557c1f034f6ab4f17ddfd6ccf68a61edff2deaf756998aabd5e0dfa0bf39af646b32b5261ccf1f1d2a61165b0ac41b62c903a21075529cc7b8cc9fc82a46cb178589bf2abf18bd90e7cde6dfb4ddb07710b7f734e0b5cb6f520366a564e8946503da4ae3f4283373032204bafb65e6e6e5abe7ce7888c1e073ff2d957d07fb627e096ad8cc1fcd976bd0b1776d57d500a9d1d82760097b049a400bd90bd865af51552d65af6290d4d1ff8968865e9b150cdc84c64ea5141740d3522884aa3cda9a40c34d4e5430c6e1b9e22ee072c42fd5b31c7879947e66df7c27f3c1e61583a29edd965f183f9482d24b8944f19c1030c90565497f3c4c130689a1e0451ceff4c75bccf8f7890d1b0689189ec9e1b2d80a928647ffef03eaa0aeff0b0d5b3eda07a0d6e17324cc1d8a8e284daea893e78c6f9e8a27a2af30e040698c3af3710df38288542ce1ce868f124c67ae91bcad694</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>只出现一次的数字</title>
       <link href="/2020/01/18/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/"/>
       <url>/2020/01/18/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/</url>
@@ -62,7 +87,7 @@
       <link href="/2020/01/16/test/"/>
       <url>/2020/01/16/test/</url>
       
-        <content type="html"><![CDATA[<html><head><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script></head><body><p>这是一个测试文章</p><p>test</p>        <div id="aplayer-ZIXwSLjV" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-ZIXwSLjV"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "rainbow",              author: "GFRIEND",              url: "http://lc-UQ294L34.cn-n1.lcfile.com/308b986e7a1533e7329a/rainbow.mp3",              pic: "http://lc-UQ294L34.cn-n1.lcfile.com/c864c24ec3570caff28f/GFRIEND.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script></body></html>]]></content>
+        <content type="html"><![CDATA[<html><head><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script></head><body><p>这是一个测试文章</p><p>test</p>        <div id="aplayer-xmoZqiKU" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-xmoZqiKU"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "rainbow",              author: "GFRIEND",              url: "http://lc-UQ294L34.cn-n1.lcfile.com/308b986e7a1533e7329a/rainbow.mp3",              pic: "http://lc-UQ294L34.cn-n1.lcfile.com/c864c24ec3570caff28f/GFRIEND.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script></body></html>]]></content>
       
       
       <categories>
